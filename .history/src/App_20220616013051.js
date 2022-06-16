@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import {IntlProvider} from 'react-intl';
 import Project from "./views/Project";
+//import ProjectV2 from "./views/ProjectV2";
 import { LOCALES } from "./i18n/locales";
 import { messages } from "./i18n/messages";
 import HomePage from './views/HomePage';

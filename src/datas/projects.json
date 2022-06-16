@@ -1,0 +1,256 @@
+[
+    {
+       "FR" : [
+            {
+                "projectId": "sfr-fastr",
+                "imgUrl": "fast-sfr.png",
+                "mission": [
+                    "Développement de l'outil FASTR, un outil destiné au service relation client de SFR.", 
+                    "- Prise en charge de nouvelles fonctionnalités", 
+                    "- Petites évolutions",
+                    "- Tickets d'AM bug prod", 
+                    "- VABF NR"
+                ],
+                "client": "sfr",
+                "role": "Développeuse React",
+                "date" : "09/2020 à aujourd'hui",
+                "usedTechnos" : "HTML5, CSS3, React, Redux, Typescript, Formsy, React-stomp",
+                "siteUrl": ""
+            },
+            {
+                "projectId": "upply",
+                "imgUrl": "upply.png",
+                "mission": [
+                    "- Résolution de bugs de production (Bugfix / Hotfix sur appli React / Next.JS)", 
+                    "- Evolution / création modules ou pages sur hubspot", 
+                    "- template d’e-mail",
+                    "- Evolution front React / Next.JS (- de 2 jours de développement)", 
+                    "- Projets annexes : Développement d’un dashboard afin de diffuser les chiffres importants de l’activité d’Upply à tout le personnel sur écran TV",
+                    "- Etude de l’outil Datadog pour mise en place du projet monitoring et alarming"
+                ],
+                "client": "upply",
+                "role": "Développeuse MCO (Maintien en conditions opérationnelles)",
+                "usedTechnos" : "HTML5, CSS3, Next.JS, Redux, Typescript, Styled Components, hubspot",
+                "date" : "10/2019 à 06/2020 (9 mois)",
+                "siteUrl": "https://www.upply.com/fr-fr/"
+            },
+            {
+                "projectId": "loccitane",
+                "imgUrl": "loccitane.png",
+                "mission": [
+                    "- Refonte graphique du checkout, en vue d’une amélioration du taux de conversion",
+                    "- Amélioration de la performance",
+                    "- Intégration de widgets et de composants en Atomic design (découpage en fonction des wireframes et prototypes sur Invision)",
+                    "- Intégration de divers système de paiements (Afterpay, Adyen, Gift-Cards SVS )",
+                    "- Refonte et montée de version du self-service 'Eptica'",
+                    "- Renfort de la sécurité sur les pages login et forget password",
+                    "- Participation au projet 'Instant Search' avec Algolia et l’API InstantSearch",
+                    "- Intégration d’un outil de conseils beauté et push des best-sellers en fonction du type de peau du client.",
+                    "- Refonte des offres « emballage cadeaux » dans le checkout",
+                    "- Maintenance, Plan de taggage, Evolution de modules existants etc..",
+                    "- Scrum master & Release Manager (rôles tournants)"
+                ],
+                "client": "L'occitane",
+                "role": "Développeuse Front-end",
+                "date" : "09/2017 à 09/2019 (2 ans)",
+                "usedTechnos" : "HTML5, CSS3, SVG, LESS, SASS, BEM, FLEX, atomic design, JavaScript ES6, JQuery, API rest, AJAX, ",
+                "siteUrl": "https://fr.loccitane.com/"
+            },
+            {
+                "projectId": "aaaic",
+                "imgUrl": "AAAIC.png",
+                "mission": [
+                    "Développements de feature et maintenance sur 2 applications web (RAFA & RAFII)",
+                    "Responsable des livrables front (qualité et maintenabilité), responsable de l'application des bonnes practices (w3c)"
+                ],
+                "client": "L'occitane",
+                "role": "Développeuse / Référente Front-end",
+                "date" : "12/2016 à 09/2017 (9 mois)",
+                "usedTechnos" : "HTML5, CSS3, loadash, underscore, D3.js, Backbone.js",
+                "siteUrl": "https://active-asset-allocation.com/fr/"
+            },
+            {
+                "projectId": "sfr",
+                "imgUrl": "SFR1.png",
+                "mission": [
+                    "Création de MEA / Création de landing page / Mise à jour de contenu sur le / Back Office / Création de fiche produit / Emailings",
+                    "Mise à jour hebdomadaire des animations (Ventes Flash, By night et offres, spéciales sur la page home)"
+                ],
+                "client": "SFR (au sein du Studio Web)",
+                "role": "Développeuse Front-end",
+                "date" : "08/2016 à 12/2016 (4 mois)",
+                "usedTechnos" : "HTML5, CSS3, Bootstrap, JQuery",
+                "siteUrl": "https://www.sfr.fr/"
+            },
+            {
+                "projectId": "total-bitume",
+                "imgUrl": "total-bitume.png",
+                "mission": [
+                    "Développements d'outils permettant d'acheter du bitume à prix fixe, de visualiser des prix à terme & achat à prix fixe, de définir un prix cible & être notifier lorsque le prix est atteint, consulter des liste et graphiques d'achats réalisés ", 
+                    "Responsable des livrables front (qualité et maintenabilité), responsable de l'application des bonnes practices (w3c)"
+                ],
+                "client": "TOTAL Bitume",
+                "role": "Développeuse / Référente Front-end",
+                "date" : "03/2016 à 08/2016 (5 mois)",
+                "usedTechnos" : "moteur de templating Twig, HTML5, CSS3, JAVASCRIPT (es5, Jquery, Ajax, loadash), git",
+                "stack": " GIT, Symfony2, MySQl, Symfony2 Doctrine",
+                "siteUrl": "https://www.bitumeonline.com/"
+            },
+            {
+                "projectId": "total-cso",
+                "imgUrl": "totalcso.png",
+                "mission": [
+                    "Développements de petites features pour le catalogue produits online",
+                    "Participation à l'évolution de fonctionnalités / Refactoring / Correction de bugs ", 
+                    "Responsable des livrables front (qualité et maintenabilité), responsable de l'application des bonnes practices (w3c)"
+                ],
+                "client": "TOTAL CSO",
+                "role": "Développeuse / Référente Front-end",
+                "date" : "02/2016 à 03/2016 (1 mois)",
+                "usedTechnos" : "HTML5, CSS3, Twig, JavaScript (natif, Jquery, Ajax, loadash)",
+                "stack": " GIT, Symfony2, MySQl, Symfony2 Doctrine",
+                "siteUrl": "https://catalogue-lubrifiants-industriels.totalenergies.fr/fr/automotive"
+            },
+            {
+                "projectId": "sacem",
+                "imgUrl": "lasacem.png",
+                "mission": [
+                    "Intégration, developpements front",
+                    "Référentes sur l'application des bonnes practices (w3c), "
+                ],
+                "client": "LA SACEM",
+                "role": "Développeuse Front-end",
+                "date" : "09/2015 à 01/2016 (4 mois)",
+                "usedTechnos" : "HTML5 / CSS3 / LESS / ES6 / REACT.JS",
+                "stack": " GIT, Symfony2, MySQl, Symfony2 Doctrine",
+                "siteUrl": "https://www.sacem.fr/"
+            }
+       ],
+        "EN" : [
+            {
+                "projectId": "sfr-fastr",
+                "imgUrl": "fast-sfr.png",
+                "mission": [
+                    "Development of the FASTR tool, a tool intended for SFR's customer relations department.", 
+                    "- Development of new features", 
+                    "- Small changes",
+                    "- AM bug prod tickets", 
+                    "- operational acceptance test, non-regression test tickets"
+                ],
+                "client": "sfr",
+                "role": "React developer",
+                "date" : "from 2020/09 to now",
+                "usedTechnos" : "HTML5, CSS3, React, Redux, Typescript, Formsy, React-stomp",
+                "siteUrl": ""
+            },
+            {
+                "projectId": "upply",
+                "imgUrl": "upply.png",
+                "mission": [
+                    "- Production bugs fix (Bugfix / Hotfix sur appli React / Next.JS)", 
+                    "- Evolution / creation of modules or pages on hubspot", 
+                    "- email templating",
+                    "- Small changes (PEV) React / Next.JS (less than 2 days of developement)", 
+                    "- Side projects : Development of a dashboard to broadcast important figures of Upply's activity to all staff on TV screen",
+                    "- Study of the Datadog tool for setting up the monitoring and alarming project"
+                ],
+                "client": "upply",
+                "role": "LSS (live system support) developer",
+                "date" : "from 2019/10 to 2020/06 (9 months)",
+                "usedTechnos" : "HTML5, CSS3, Next.JS, Redux, Typescript, Styled Components, hubspot",
+                "siteUrl": "https://www.upply.com/fr-fr/"
+            },
+            {
+                "projectId": "loccitane",
+                "imgUrl": "loccitane.png",
+                "mission": [
+                    "- Refonte graphique du checkout, en vue d’une amélioration du taux de conversion",
+                    "- Amélioration de la performance",
+                    "- Intégration de widgets et de composants en Atomic design (découpage en fonction des wireframes et prototypes sur Invision)",
+                    "- Intégration de divers système de paiements (Afterpay, Adyen, Gift-Cards SVS )",
+                    "- Refonte et montée de version du self-service 'Eptica'",
+                    "- Renfort de la sécurité sur les pages login et forget password",
+                    "- Participation au projet 'Instant Search' avec Algolia et l’API InstantSearch",
+                    "- Intégration d’un outil de conseils beauté et push des best-sellers en fonction du type de peau du client.",
+                    "- Refonte des offres « emballage cadeaux » dans le checkout",
+                    "- Maintenance, Plan de taggage, Evolution de modules existants etc..",
+                    "- Scrum master & Release Manager (rôles tournants)"
+                ],
+                "client": "L'occitane",
+                "role": "Développeuse Front-end",
+                "date" : "09/2017 à 09/2019 (2 ans)",
+                "usedTechnos" : "HTML5, CSS3, SVG, LESS, SASS, BEM, FLEX, atomic design, JavaScript ES6, JQuery, API rest, AJAX, ",
+                "siteUrl": "https://fr.loccitane.com/"
+            },
+            {
+                "projectId": "aaaic",
+                "imgUrl": "AAAIC.png",
+                "mission": [
+                    "Développements de feature et maintenance sur 2 applications web (RAFA & RAFII)",
+                    "Responsable des livrables front (qualité et maintenabilité), responsable de l'application des bonnes practices (w3c)"
+                ],
+                "client": "L'occitane",
+                "role": "Développeuse / Référente Front-end",
+                "date" : "12/2016 à 09/2017 (9 mois)",
+                "usedTechnos" : "HTML5, CSS3, loadash, underscore, D3.js, Backbone.js",
+                "siteUrl": "https://active-asset-allocation.com/fr/"
+            },
+            {
+                "projectId": "sfr",
+                "imgUrl": "SFR1.png",
+                "mission": [
+                    "Création de MEA / Création de landing page / Mise à jour de contenu sur le / Back Office / Création de fiche produit / Emailings",
+                    "Mise à jour hebdomadaire des animations (Ventes Flash, By night et offres, spéciales sur la page home)"
+                ],
+                "client": "SFR (au sein du Studio Web)",
+                "role": "Développeuse Front-end",
+                "date" : "08/2016 à 12/2016 (4 mois)",
+                "usedTechnos" : "HTML5, CSS3, Bootstrap, JQuery",
+                "siteUrl": "https://www.sfr.fr/"
+            },
+            {
+                "projectId": "total-bitume",
+                "imgUrl": "total-bitume.png",
+                "mission": [
+                    "Développements d'outils permettant d'acheter du bitume à prix fixe, de visualiser des prix à terme & achat à prix fixe, de définir un prix cible & être notifier lorsque le prix est atteint, consulter des liste et graphiques d'achats réalisés ", 
+                    "Responsable des livrables front (qualité et maintenabilité), responsable de l'application des bonnes practices (w3c)"
+                ],
+                "client": "TOTAL Bitume",
+                "role": "Développeuse / Référente Front-end",
+                "date" : "03/2016 à 08/2016 (5 mois)",
+                "usedTechnos" : "moteur de templating Twig, HTML5, CSS3, JAVASCRIPT (es5, Jquery, Ajax, loadash), git",
+                "stack": " GIT, Symfony2, MySQl, Symfony2 Doctrine",
+                "siteUrl": "https://www.bitumeonline.com/"
+            },
+            {
+                "projectId": "total-cso",
+                "imgUrl": "totalcso.png",
+                "mission": [
+                    "Développements de petites features pour le catalogue produits online",
+                    "Participation à l'évolution de fonctionnalités / Refactoring / Correction de bugs ", 
+                    "Responsable des livrables front (qualité et maintenabilité), responsable de l'application des bonnes practices (w3c)"
+                ],
+                "client": "TOTAL CSO",
+                "role": "Développeuse / Référente Front-end",
+                "date" : "02/2016 à 03/2016 (1 mois)",
+                "usedTechnos" : "HTML5, CSS3, Twig, JavaScript (natif, Jquery, Ajax, loadash)",
+                "stack": " GIT, Symfony2, MySQl, Symfony2 Doctrine",
+                "siteUrl": "https://catalogue-lubrifiants-industriels.totalenergies.fr/fr/automotive"
+            },
+            {
+                "projectId": "sacem",
+                "imgUrl": "lasacem.png",
+                "mission": [
+                    "Intégration, developpements front",
+                    "Référentes sur l'application des bonnes practices (w3c), "
+                ],
+                "client": "LA SACEM",
+                "role": "Développeuse Front-end",
+                "date" : "09/2015 à 01/2016 (4 mois)",
+                "usedTechnos" : "HTML5 / CSS3 / LESS / ES6 / REACT.JS",
+                "stack": " GIT, Symfony2, MySQl, Symfony2 Doctrine",
+                "siteUrl": "https://www.sacem.fr/"
+            }
+        ]
+    }
+]

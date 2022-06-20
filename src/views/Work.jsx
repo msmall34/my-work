@@ -1,166 +1,167 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Link as LinkScroll } from 'react-scroll';
+import React, {useEffect, useState} from "react";
+
+import {
+    CarouselControl,
+    Carousel,
+    CarouselItem,
+    CarouselIndicators,
+} from 'reactstrap';
+
+import {HiArrowNarrowRight} from 'react-icons/hi';
+
+import projects from './../datas/projects.json';
+require.context('../assets', false, /\.(png|jpe?g|svg)$/)
+
+
 
 const Work = (props) => {
-  return (
-    <section id="work" name='work'  className='work w-full h-screen'>
-		<div className='work-content w-full h-full flex flex-col justify-center items-center'> 
-			<div className='w-full h-full flex flex-col justify-center items-center '>
 
-				<div className='w-full flex justify-center items-center'>
-					<div className="w-[1000px] overskrift-cont text-left text-4xl font-medium text-theme-light-100"><h2 className="overskrift"></h2></div>
-				</div>
-				
-				<ol className='w-full'>
-					<li>	
-						<Link  className="pop" to="/project/sfr-fastr" >
-							<div className="line row flex justify-between items-center">
-								<div className="single white flex justify-start items-start">
-									<span>SFR</span>
-								</div>
-								<div className="arrow-right svg-icon">
-									<span className="view white">View project</span>
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enable-background="new 0 0 64 8.9" xmlSpace="preserve">
-									<polyline fill="#ffffff" points="51,7.9 51,0.9 64,4.4 "></polyline>
-									<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
-									</svg>			
-								</div>
-							</div>
-						</Link>	
-					</li>
-					<li>	
-						<Link  className="pop" to="/project/upply" >
-							<div className="line row flex justify-between items-center">
-								<div className="single white flex justify-start items-start">
-									<span>UPPLY</span>
-								</div>
-								<div className="arrow-right svg-icon">
-													<span className="view white">View project</span>
-										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enable-background="new 0 0 64 8.9" xmlSpace="preserve">
-								<polyline fill="#ffffff" points="51,7.9 51,0.9 64,4.4 "></polyline>
-								<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
-								</svg>				
-									</div>
-							</div>
-						</Link>		
-					</li>
-					<li>	
-						<Link  className="pop" to="/project/loccitane" >
-							<div className="line row flex justify-between items-center">
-								<div className="single white flex justify-start items-start">
-									<span>L'OCCITANE</span>
-								</div>
-								<div className="arrow-right svg-icon">
-									<span className="view white">View project</span>
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enable-background="new 0 0 64 8.9" xmlSpace="preserve">
-								<polyline fill="#ffffff" points="51,7.9 51,0.9 64,4.4 "></polyline>
-								<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
-								</svg>			
-								</div>
-							</div>
-						</Link>		
-					</li>
-					<li>	
-						<Link  className="pop" to="/project/aaaic" >
-							<div className="line row flex justify-between items-center">
-								<div className="single white flex justify-start items-start">
-									<span>AAIC</span>
-								</div>
-								<div className="arrow-right svg-icon">
-									<span className="view white">View project</span>
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enable-background="new 0 0 64 8.9" xmlSpace="preserve">
-									<polyline fill="#ffffff" points="51,7.9 51,0.9 64,4.4 "></polyline>
-									<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
-									</svg>			
-								</div>
-							</div>
-						</Link>		
-					</li>
-					<li>	
-						<Link  className="pop" to="/project/sfr" >
-							<div className="line row flex justify-between items-center">
-								<div className="single white flex justify-start items-start">
-									<span>SFR</span>
-								</div>
-								<div className="arrow-right svg-icon">
-									<span className="view white">View project</span>
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enable-background="new 0 0 64 8.9" xmlSpace="preserve">
-									<polyline fill="#ffffff" points="51,7.9 51,0.9 64,4.4 "></polyline>
-									<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
-									</svg>			
-								</div>
-							</div>
-						</Link>		
-					</li>
-					<li>	
-						<Link  className="pop" to="/project/total-bitume" >
-							<div className="line row flex justify-between items-center">
-								<div className="single white flex justify-start items-start">
-									<span>TOTAL BITUME</span>
-								</div>
-								<div className="arrow-right svg-icon">
-									<span className="view white">View project</span>
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enable-background="new 0 0 64 8.9" xmlSpace="preserve">
-									<polyline fill="#ffffff" points="51,7.9 51,0.9 64,4.4 "></polyline>
-									<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
-									</svg>				
-								</div>
-							</div>
-						</Link>		
-					</li>
-					<li>	
-						<Link  className="pop" to="/project/total-cso" >
-							<div className="line row flex justify-between items-center">
-								<div className="single white flex justify-start items-start">
-									<span>TOTAL CSO</span>
-								</div>
-								<div className="arrow-right svg-icon">
-									<span className="view white">View project</span>
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enable-background="new 0 0 64 8.9" xmlSpace="preserve">
-									<polyline fill="#ffffff" points="51,7.9 51,0.9 64,4.4 "></polyline>
-									<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
-									</svg>				
-								</div>
-							</div>
-						</Link>		
-					</li>
-					<li>	
-						<Link  className="pop" to="/project/sacem" >
-							<div className="line row flex justify-between items-center">
-								<div className="single white flex justify-start items-start">
-									<span>La SACEM</span>
-								</div>
-								<div className="arrow-right svg-icon">
-									<span className="view white">View project</span>
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enable-background="new 0 0 64 8.9" xmlSpace="preserve">
-									<polyline fill="#ffffff" points="51,7.9 51,0.9 64,4.4 "></polyline>
-									<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
-									</svg>				
-								</div>
-							</div>
-						</Link>		
-					</li>
-					
-				</ol>
-				<div className='w-full flex justify-center items-center'>
-					<div className="w-[1000px] overskrift-cont text-left text-4xl font-medium text-theme-light-100"><h2 className="overskrift"></h2></div>
-				</div>
-			</div>
-		</div>
-		
-		<LinkScroll /* onClick={() => props.setSelectedItem('contact')} */ to={'contact'} smooth={true} duration={1000} className="hidden lg:flex right-nav white">
-            <p>Contact</p>
-            <div class="svg-icon">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enable-background="new 0 0 64 8.9" xmlSpace="preserve">
-            <polyline fill="#ffffff" points="51,7.9 51,0.9 64,4.4 "></polyline>
-            <line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
-            </svg>		
-            </div>
-        </LinkScroll>
-		
-	</section>
-  );
+    const [filteredProjects, setFilteredProjects] = useState();
+    const importAll = (r) => {
+        let images = {};
+         r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
+        return images
+       }
+    // img extensions must be minuscule
+    const projectImages = importAll(require.context('../assets/img', false, /\.(png|jpe?g|svg)$/));
+
+    useEffect(() => {
+        console.log('projectImages', projectImages)
+        const filteredProjectsByLocale = getProjectsBycurrentLocale();
+        setFilteredProjects(filteredProjectsByLocale)
+    }, []);
+
+    const getProjectsBycurrentLocale = () => {
+        let projectLocal;
+            console.log('props.currentLocale', props.currentLocale)
+            projects.map(project => {
+                if(props.currentLocale === "fr-FR") {
+                    projectLocal = project.FR
+                } else {
+                    projectLocal = project.EN
+                }
+            })
+            console.log('projectLocal', projectLocal)
+            return projectLocal
+    }
+
+  // State for Active index
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  
+  // State for Animation
+  const [animating, setAnimating] = React.useState(false);
+
+  // projects array length
+  const itemLength = projects.length - 1
+
+  // Previous button for Carousel
+  const previousButton = () => {
+      if (animating) return;
+      const nextIndex = activeIndex === 0 ?
+          itemLength : activeIndex - 1;
+      setActiveIndex(nextIndex);
+  }
+
+  // Next button for Carousel
+  const nextButton = () => {
+      if (animating) return;
+      const nextIndex = activeIndex === itemLength ?
+          0 : activeIndex + 1;
+      setActiveIndex(nextIndex);
+  }
+
+  // Carousel project Data
+  const carouselprojectData = filteredProjects && filteredProjects.map((project) => {
+      return (
+          <CarouselItem
+              key={project.projectId}
+              onExited={() => setAnimating(false)}
+              onExiting={() => setAnimating(true)}
+          >
+              <div className="flex flex-col justify-center items-center project-content">
+                  <div className="flex flex-col justify-center items-center">
+                      <div className="flex flex-col md:flex-row justify-center items-center w-full md:w-[90%]">
+                          <div className="w-full md:w-1/2 siteImage md:mr-[50px] mb-3">
+                              <div className="mb-xs-30">
+                                  <img src={projectImages[project && project.imgUrl ? project.imgUrl : 0]} />
+                              </div>
+                          </div>
+                          <div className="w-full md:w-1/2 p-3">
+
+                              <div className="mb-5">
+                                  <div className="font-bold">Mission</div>
+                                  <div className="text-theme-light-400 text-sm">
+                                      {project && project.mission ? project.mission.map(m => {
+                                          return <div>{m}</div>
+                                      }) : ""}
+                                  </div>
+                              </div>
+
+                              <div className="mb-5 mr-8">
+                                  <div className="font-bold">Date</div>
+                                  <div className="text-theme-light-400 text-sm">
+                                      {project && project.date ? project.date : ""}
+                                  </div>
+                              </div>
+                              
+                              
+                              <div className="mb-5 mr-8">
+                                  <div className="font-bold">Client</div>
+                                  <div className="text-theme-light-400 uppercase text-sm">
+                                      {project && project.client ? project.client : ""}
+                                  </div>
+                              </div>
+                              
+                              <div className="mb-5">
+                                  <div className="font-bold">Rôle</div>
+                                  <div className="text-theme-light-400 text-sm">{project && project.role ? project.role : ""}</div>
+                              </div>
+                              <div className="mb-5">
+                                  <div className="font-bold">Technologies utilisées</div>
+                                  <div className="text-theme-light-400 text-sm">{project && project.usedTechnos ? project.usedTechnos : ""}</div>
+                              </div>
+
+                              {project && project.siteUrl && 
+                                  <div className="mb-5 w-full">
+                                      <div className='w-full md:w-1/2 text-center flex justify-start'>
+                                          <a href={project && project.siteUrl ? project.siteUrl : "/"} className='text-white group border-2 px-6 py-3 my-2 flex items-center bg-theme-dark-100 border-theme-dark-100 hover:bg-pink-600 hover:border-pink-600' target="_blank" >
+                                              Voir le site
+                                              <span className='group-hover:transition transform group-hover:translate-x-1 duration-300'>
+                                                  <HiArrowNarrowRight className='ml-3'/>
+                                              </span>
+                                          </a>
+                                      </div>
+                                  </div>
+                              }
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </CarouselItem>
+      );
+  });
+
+
+  return (
+      <section id="project" className='project w-full'>
+            <Carousel previous={previousButton} next={nextButton}
+              activeIndex={activeIndex}>
+              <CarouselIndicators items={filteredProjects}
+                  activeIndex={activeIndex}
+                  onClickHandler={(newIndex) => {
+                      if (animating) return;
+                      setActiveIndex(newIndex);
+                  }} />
+              {carouselprojectData}
+              <CarouselControl directionText="Prev"
+                  direction="prev" onClickHandler={previousButton} />
+              <CarouselControl directionText="Next"
+                  direction="next" onClickHandler={nextButton} />
+          </Carousel>
+      </section>
+  )
 };
 
 export default Work;

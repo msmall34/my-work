@@ -61,8 +61,8 @@ const Project = (props) => {
                     <div className="flex justify-end items-center w-[150px]">
                         <button  className="pop" onClick={props.history.goBack}>
                             <div className="svg-icon">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="14px" viewBox="0 0 26 14" enable-background="new 0 0 26 14" xmlSpace="preserve">
-                                <path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M9,4h10.6c2.4,0,4.3,1.6,4.3,4s-1.9,4-4.3,4H11"></path>
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="14px" viewBox="0 0 26 14" enableBackground="new 0 0 26 14" xmlSpace="preserve">
+                                <path fill="none" stroke="#000000" stroke-width="2" strokeMiterlimit="10" d="M9,4h10.6c2.4,0,4.3,1.6,4.3,4s-1.9,4-4.3,4H11"></path>
                                 <polygon fill="#000000" points="9,0.2 9,7.9 0.3,4.1 "></polygon>
                                 </svg>
                             </div>

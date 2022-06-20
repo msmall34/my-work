@@ -60,24 +60,24 @@ const About = (props) => {
                         <div className='skillsContainer '>
                             <Zoom bottom cascade when={isAboutSection}>
                                 <ul id="techList">
-                                    <li class="react">react</li>
-                                    <li class="css3">css3</li>
-                                    <li class="javascript">javascript</li>
-                                    <li class="jquery">jquery</li>
-                                    <li class="typescript">typescript</li>
-                                    <li class="webstandards">web standards</li>
-                                    <li class="accessibility">accessibility</li>
-                                    <li class="usability">usability</li>
-                                    <li class="seo">seo</li>
-                                    <li class="responsive">responsive</li>
-                                    <li class="api">api</li>
-                                    <li class="ajax">ajax</li>
-                                    <li class="git">git</li>
-                                    <li class="styledcomponent">styled component</li>
-                                    <li class="nextjs">nextjs</li>
-                                    <li class="redux">redux</li>
-                                    <li class="jg">j.g.</li>
-                                    <li class="skills">skills</li>
+                                    <li className="react">react</li>
+                                    <li className="css3">css3</li>
+                                    <li className="javascript">javascript</li>
+                                    <li className="jquery">jquery</li>
+                                    <li className="typescript">typescript</li>
+                                    <li className="webstandards">web standards</li>
+                                    <li className="accessibility">accessibility</li>
+                                    <li className="usability">usability</li>
+                                    <li className="seo">seo</li>
+                                    <li className="responsive">responsive</li>
+                                    <li className="api">api</li>
+                                    <li className="ajax">ajax</li>
+                                    <li className="git">git</li>
+                                    <li className="styledcomponent">styled component</li>
+                                    <li className="nextjs">nextjs</li>
+                                    <li className="redux">redux</li>
+                                    <li className="jg">j.g.</li>
+                                    <li className="skills">skills</li>
                                     </ul> 
                             </Zoom>
                         </div>
@@ -85,10 +85,10 @@ const About = (props) => {
                       
                         <Link to={'work'} smooth={true} duration={1000} className='hidden lg:flex right-nav black z-100'>
                             <p>Recent work</p>
-                            <div class="svg-icon">
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enable-background="new 0 0 64 8.9" xmlSpace="preserve">
+                            <div className="svg-icon">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enableBackground="new 0 0 64 8.9" xmlSpace="preserve">
                             <polyline fill="#000" points="51,7.9 51,0.9 64,4.4 "></polyline>
-                            <line fill="none" stroke="#000" stroke-miterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
+                            <line fill="none" stroke="#000" strokeMiterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
                             </svg>		
                             </div>
                         </Link>

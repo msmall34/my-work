@@ -11,7 +11,7 @@
                     "- Tickets d'AM bug prod", 
                     "- VABF NR"
                 ],
-                "client": "sfr",
+                "client": "SFR",
                 "role": "Développeuse React",
                 "date" : "09/2020 à aujourd'hui",
                 "usedTechnos" : "HTML5, CSS3, React, Redux, Typescript, Formsy, React-stomp",
@@ -23,7 +23,7 @@
                 "mission": [
                     "- Résolution de bugs de production (Bugfix / Hotfix sur appli React / Next.JS)", 
                     "- Evolution / création modules ou pages sur hubspot", 
-                    "- template d’e-mail",
+                    "- template d’e-mails",
                     "- Evolution front React / Next.JS (- de 2 jours de développement)", 
                     "- Projets annexes : Développement d’un dashboard afin de diffuser les chiffres importants de l’activité d’Upply à tout le personnel sur écran TV",
                     "- Etude de l’outil Datadog pour mise en place du projet monitoring et alarming"
@@ -131,13 +131,13 @@
                 "projectId": "sfr-fastr",
                 "imgUrl": "fast-sfr.png",
                 "mission": [
-                    "Development of the FASTR tool, a tool intended for SFR's customer relations department.", 
+                    "Development of the FASTR tool, a tool dedicated to SFR's customer relations department.", 
                     "- Development of new features", 
                     "- Small changes",
                     "- AM bug prod tickets", 
                     "- operational acceptance test, non-regression test tickets"
                 ],
-                "client": "sfr",
+                "client": "SFR",
                 "role": "React developer",
                 "date" : "from 2020/09 to now",
                 "usedTechnos" : "HTML5, CSS3, React, Redux, Typescript, Formsy, React-stomp",
@@ -147,9 +147,9 @@
                 "projectId": "upply",
                 "imgUrl": "upply.png",
                 "mission": [
-                    "- Production bugs fix (Bugfix / Hotfix sur appli React / Next.JS)", 
-                    "- Evolution / creation of modules or pages on hubspot", 
-                    "- email templating",
+                    "- Production bugs fix (Bugfix / Hotfix on the React / Next.JS app)", 
+                    "- Evolution and creation of modules/pages on hubspot", 
+                    "- emails templating",
                     "- Small changes (PEV) React / Next.JS (less than 2 days of developement)", 
                     "- Side projects : Development of a dashboard to broadcast important figures of Upply's activity to all staff on TV screen",
                     "- Study of the Datadog tool for setting up the monitoring and alarming project"
@@ -164,9 +164,9 @@
                 "projectId": "loccitane",
                 "imgUrl": "loccitane.png",
                 "mission": [
-                    "- Refonte graphique du checkout, en vue d’une amélioration du taux de conversion",
-                    "- Amélioration de la performance",
-                    "- Intégration de widgets et de composants en Atomic design (découpage en fonction des wireframes et prototypes sur Invision)",
+                    "- Graphical redesign of the checkout, with a view to improving the conversion rate",
+                    "- Performance improvement",
+                    "- Integration of widgets and components in Atomic design (from wireframes or Invision prototypes to style guides and the web pages)",
                     "- Intégration de divers système de paiements (Afterpay, Adyen, Gift-Cards SVS )",
                     "- Refonte et montée de version du self-service 'Eptica'",
                     "- Renfort de la sécurité sur les pages login et forget password",

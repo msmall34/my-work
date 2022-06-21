@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from "react";
-
+import {
+    withRouter, 
+} from "react-router-dom";
 import {
     CarouselControl,
     Carousel,
@@ -9,7 +11,7 @@ import {
 
 import {HiArrowNarrowRight} from 'react-icons/hi';
 
-import projects from './../datas/projects.json';
+import projects from '../datas/projects.json';
 require.context('../assets', false, /\.(png|jpe?g|svg)$/)
 
 
@@ -17,19 +19,20 @@ require.context('../assets', false, /\.(png|jpe?g|svg)$/)
 const Work = (props) => {
 
     const [filteredProjects, setFilteredProjects] = useState();
+
     const importAll = (r) => {
         let images = {};
          r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item); });
         return images
        }
+
     // img extensions must be minuscule
     const projectImages = importAll(require.context('../assets/img', false, /\.(png|jpe?g|svg)$/));
 
     useEffect(() => {
-        console.log('projectImages', projectImages)
-        const filteredProjectsByLocale = getProjectsBycurrentLocale();
-        setFilteredProjects(filteredProjectsByLocale)
-    }, []);
+        console.log('test')
+        getProjectDetails()
+    }, [props.currentLocale]);
 
     const getProjectsBycurrentLocale = () => {
         let projectLocal;
@@ -43,6 +46,12 @@ const Work = (props) => {
             })
             console.log('projectLocal', projectLocal)
             return projectLocal
+    }
+
+    const getProjectDetails = () => {
+        const filteredProjectsByLocale = getProjectsBycurrentLocale();
+        console.log('filteredProjectsByLocale', filteredProjectsByLocale)
+        setFilteredProjects(filteredProjectsByLocale)
     }
 
   // State for Active index
@@ -145,23 +154,28 @@ const Work = (props) => {
 
 
   return (
-      <section id="project" className='project w-full'>
-            <Carousel previous={previousButton} next={nextButton}
-              activeIndex={activeIndex}>
-              <CarouselIndicators items={filteredProjects}
-                  activeIndex={activeIndex}
-                  onClickHandler={(newIndex) => {
-                      if (animating) return;
-                      setActiveIndex(newIndex);
-                  }} />
-              {carouselprojectData}
-              <CarouselControl directionText="Prev"
-                  direction="prev" onClickHandler={previousButton} />
-              <CarouselControl directionText="Next"
-                  direction="next" onClickHandler={nextButton} />
-          </Carousel>
-      </section>
+      <div>
+          {filteredProjects && 
+            <section id="work" className='work w-full'>
+                <Carousel previous={previousButton} next={nextButton}
+                activeIndex={activeIndex}>
+                <CarouselIndicators items={filteredProjects}
+                    activeIndex={activeIndex}
+                    onClickHandler={(newIndex) => {
+                        if (animating) return;
+                        setActiveIndex(newIndex);
+                    }} />
+                {carouselprojectData}
+                <CarouselControl directionText="Prev"
+                    direction="prev" onClickHandler={previousButton} />
+                <CarouselControl directionText="Next"
+                    direction="next" onClickHandler={nextButton} />
+            </Carousel>
+        </section>
+          }
+      </div>
+      
   )
 };
 
-export default Work;
+export default withRouter(Work);

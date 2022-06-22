@@ -83,7 +83,7 @@ const About = (props) => {
                         </div>
 
                       
-                        <Link to={'work'} smooth={true} duration={1000} className='hidden lg:flex right-nav black z-100'>
+                        {/* <Link to={'work'} smooth={true} duration={1000} className='hidden lg:flex right-nav black z-100'>
                             <p>Recent work</p>
                             <div className="svg-icon">
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="9px" viewBox="0 0 64 8.9" enableBackground="new 0 0 64 8.9" xmlSpace="preserve">
@@ -91,7 +91,7 @@ const About = (props) => {
                             <line fill="none" stroke="#000" strokeMiterlimit="10" x1="51" y1="4.4" x2="0" y2="4.4"></line>
                             </svg>		
                             </div>
-                        </Link>
+                        </Link> */}
                         
                     </div>
 

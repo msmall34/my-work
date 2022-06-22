@@ -62,7 +62,6 @@ const Home = (props) => {
             </div>
         </Link>
 
-
     </section>
   )
 }

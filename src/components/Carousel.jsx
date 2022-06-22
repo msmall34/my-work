@@ -30,15 +30,19 @@ export default class Carousel extends Component {
                  {this.props.items && this.props.items.map(item =>  <div className="flex flex-col justify-center items-center project-content">
                   <div className="flex flex-col justify-center items-center">
                       <div className="flex flex-col md:flex-row justify-center items-center w-full md:w-[90%]">
-                          <div className="w-full md:w-1/2 siteImage md:mr-[50px] mb-3">
-                              <div className="mb-xs-30">
-                                  <img src={this.props.images[item.imgUrl]} />
+                          <div className="w-full md:w-3/5 siteImage md:mr-[50px] mb-3">
+                              <div className="imgWrapper mb-xs-30" style={{backgroundImage: `url(${this.props.images[item.imgUrl]})`}}>
+                                  
+                                  <div class="content" onclick="OnClick()" >
+                                      <h2>Technologies utilisées</h2>
+                                      <h3>{item && item.usedTechnos ? item.usedTechnos : ""}</h3>  
+                                </div>
                               </div>
                           </div>
-                          <div className="w-full md:w-1/2 p-3">
+                          <div className="w-full md:w-2/5 p-3 h-[400px] flex flex-col justify-between">
 
                               <div className="mb-5">
-                                  <div className="font-bold">Mission</div>
+                                  <div className="workTitle">Mission</div>
                                   <div className="text-theme-light-400 text-sm">
                                       {item && item.mission ? item.mission.map(m => {
                                           return <div>{m}</div>
@@ -46,10 +50,10 @@ export default class Carousel extends Component {
                                   </div>
                               </div>
                               
-                              <div className="mb-5">
-                                  <div className="font-bold">Technologies utilisées</div>
+                             {/*  <div className="mb-5">
+                                  <div className="workTitle">Technologies utilisées</div>
                                   <div className="text-theme-light-400 text-sm">{item && item.usedTechnos ? item.usedTechnos : ""}</div>
-                              </div>
+                              </div> */}
 
                               {item && item.siteUrl && 
                                   <div className="mb-5 w-full">
@@ -70,7 +74,6 @@ export default class Carousel extends Component {
               </div> )}
         </Slider>
 
-        <h4>Second Slider</h4>
 
         <Slider
           asNavFor={this.state.nav1}
@@ -87,11 +90,6 @@ export default class Carousel extends Component {
                             <h2>"{item && item.role ? item.role : ""}"</h2>
                         </div>
                         <div className="content">
-                            <div className="social">
-                                <span className="font-semibold mr-1">Date : </span>
-                                <span className="">{item && item.date ? item.date : ""}</span>
-                            </div>
-                            
                             <div className="social">
                                 <span className="font-semibold mr-1">Date : </span>
                                 <span className="">{item && item.date ? item.date : ""}</span>

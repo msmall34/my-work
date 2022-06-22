@@ -10,10 +10,10 @@ const HomePage = (props) => {
         <React.Fragment>
             <NavBar currentLocale={props.currentLocale}
                     handleChange={props.handleChange} />
-            <Home />
-            <About />
-            <Work />
-            <Contact/>
+            <Home currentLocale={props.currentLocale}/>
+            <About currentLocale={props.currentLocale}/>
+            <Work currentLocale={props.currentLocale}/>
+            <Contact currentLocale={props.currentLocale}/>
         </React.Fragment>
     )
 }

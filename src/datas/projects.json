@@ -156,7 +156,7 @@
                 ],
                 "client": "upply",
                 "role": "LSS (live system support) developer",
-                "date" : "from 2019/10 to 2020/06 (9 months)",
+                "date" : "from 2019/10 to 2020/06",
                 "usedTechnos" : "HTML5, CSS3, Next.JS, Redux, Typescript, Styled Components, hubspot",
                 "siteUrl": "https://www.upply.com/fr-fr/"
             },
@@ -164,21 +164,14 @@
                 "projectId": "loccitane",
                 "imgUrl": "loccitane.png",
                 "mission": [
-                    "- Graphical redesign of the checkout, with a view to improving the conversion rate",
-                    "- Performance improvement",
-                    "- Integration of widgets and components in Atomic design (from wireframes or Invision prototypes to style guides and the web pages)",
-                    "- Integration of various payment systems (Afterpay, Adyen, Gift-Cards SVS)",
-                    "- Redesign and upgrade of the 'Eptica' self-service",
-                    "- Security reinforcement on the login and forget password pages",
-                    "- Developement of the 'Instant Search' project with Algolia and the InstantSearch API",
-                    "- Development of a beauty advice tool and promotion of bestsellers according to the client's skin type.",
-                    "- Redesign of the “gift wrapping” offers in the checkout",
-                    "- Maintenance, Tagging plan, Evolution of existing modules etc...",
-                    "- Scrum master & Release Manager (rotating roles)"
+                    "- Prise en charge de divers développement front-end (nouvelles features, évolutions, maintenance..) dans un contexte e-commerce (intégration en atomic design, mise en place d'un style-guide..)",
+                    "- Interventions sur divers partie du site (product-pages, procuct-list, modules, checkout, page logging, logouts ...)",
+                    "- Prise en charge de problématique de performance, GDPR, renfort de sécurité, plan de taggage ..",
+                    "- équipe: 19 personnes"
                 ],
                 "client": "L'occitane",
                 "role": "Front-end developer",
-                "date" : "from 2017/09 to 2019/09 (2 years)",
+                "date" : "from 2017/09 to 2019/09",
                 "usedTechnos" : "HTML5, CSS3, SVG, LESS, SASS, BEM, FLEX, atomic design, JavaScript ES6, JQuery, API rest, AJAX, ",
                 "siteUrl": "https://fr.loccitane.com/"
             },
@@ -191,7 +184,7 @@
                 ],
                 "client": "L'occitane",
                 "role": "Developer / Front-end referent",
-                "date" : "2016/12 to 2017/09 (9 months)",
+                "date" : "2016/12 to 2017/09",
                 "usedTechnos" : "HTML5, CSS3, loadash, underscore, D3.js, Backbone.js",
                 "siteUrl": "https://active-asset-allocation.com/fr/"
             },
@@ -204,7 +197,7 @@
                 ],
                 "client": "SFR (within the Web Studio)",
                 "role": "Front-end developer",
-                "date" : "From 2016/08 to 2016/12 (4 months)",
+                "date" : "From 2016/08 to 2016/12",
                 "usedTechnos" : "HTML5, CSS3, Bootstrap, JQuery",
                 "siteUrl": "https://www.sfr.fr/"
             },
@@ -217,7 +210,7 @@
                 ],
                 "client": "TOTAL Bitume",
                 "role": "Developer / Front-end referent",
-                "date" : "From 2016/03 to 2016/08 (5 months)",
+                "date" : "From 2016/03 to 2016/08",
                 "usedTechnos" : "Twig templating engine, HTML5, CSS3, JAVASCRIPT (es5, Jquery, Ajax, loadash), git",
                 "stack": " GIT, Symfony2, MySQl, Symfony2 Doctrine",
                 "siteUrl": "https://www.bitumeonline.com/"
@@ -232,7 +225,7 @@
                 ],
                 "client": "TOTAL CSO",
                 "role": "Developer / Front-end referent",
-                "date" : "From 2016/02 to 2016/03 (1 month)",
+                "date" : "From 2016/02 to 2016/03",
                 "usedTechnos" : "HTML5, CSS3, Twig, JavaScript (natif, Jquery, Ajax, loadash)",
                 "stack": " GIT, Symfony2, MySQl, Symfony2 Doctrine",
                 "siteUrl": "https://catalogue-lubrifiants-industriels.totalenergies.fr/fr/automotive"
@@ -246,7 +239,7 @@
                 ],
                 "client": "LA SACEM",
                 "role": "Front-end developer",
-                "date" : "From 2015/09 to 2016/01 (4 months)",
+                "date" : "From 2015/09 to 2016/01",
                 "usedTechnos" : "HTML5 / CSS3 / LESS / ES6 / REACT.JS",
                 "stack": " GIT, Symfony2, MySQl, Symfony2 Doctrine",
                 "siteUrl": "https://www.sacem.fr/"

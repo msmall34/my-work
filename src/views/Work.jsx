@@ -53,8 +53,10 @@ const Work = (props) => {
   return (
       <div>
           {filteredProjects && 
-            <section id="work" className='work w-full'>
-                <Carousel items={filteredProjects} images={projectImages}/>
+            <section id="work" className='work w-full h-full flex flex-col justify-center items-center text-slate-800'>
+                <div className='w-[80%] py-20'>
+                    <Carousel items={filteredProjects} images={projectImages}/>
+                </div>
             </section>
           }
       </div>

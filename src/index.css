@@ -135,7 +135,6 @@
 
 #work {
     width: 100%;
-    min-height: 100%;
     height: auto;
     position: relative;
     background-image: url('./assets/img/work-bg-06.jpg');
@@ -152,7 +151,7 @@
     height: 100%;
     width: 100%;
     background: theme('colors.theme-dark-200');
-    opacity: 0.9 V;
+    opacity: 0.9;
 }
 
 #work a .line {
@@ -161,11 +160,87 @@
     width: 100%;
 }
 
-#work .project-content {
-    min-height: 836px !important;
+#work {
+    padding: 100px 30px;
     height: 100% !important;
 }
 
+#work .project-content, #work .carousel {
+    height: 100% !important;
+}
+
+#carousel .card {
+    position: relative;
+    margin: 50px auto;
+    width: 400px !important;
+    padding: 20px;
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    border: 0;
+}
+
+#carousel .card .deco {
+      border-radius: 3px;
+      width: 100px;
+      height: 100px;
+      background: black;
+      position: absolute;
+      right: 0px;
+      top: 0;
+      background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+      border-bottom-left-radius: 170px;
+  }
+
+  #carousel .card .content {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #carousel .card h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#carousel .card h2 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+
+#carousel .card .social {
+      margin-bottom: 5px;
+  }
+
+#carousel .card .social a {
+    text-decoration: none !important;
+    color: black;
+    margin-left: 8px;
+    font-weight: 300;
+}
+
+#carousel .card .social a i {
+    font-weight: 400;
+}
+
+#carousel .card .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#carousel .card .location i {
+    color: red;
+}
+
+#carousel .card .location p {
+    font-weight: 300;
+}
+
+
+    
 #contact {
 position: relative;
 }
